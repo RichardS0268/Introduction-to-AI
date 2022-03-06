@@ -6,7 +6,7 @@
 
 ### 1. Breadth First Search (BFS)
 
-#### **1.1 **Key Point
+#### 1.1 Key Point
 
 + for a focus (i.e. the node on hand), we try to traverse the nodes around it. In order not to repeat the visit, we set a signal variable.
 + We prefer to choose the least deep node for search next
