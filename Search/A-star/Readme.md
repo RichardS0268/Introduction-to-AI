@@ -75,10 +75,10 @@ path.reverse() # optional ](https://leetcode.com/problems/perfect-squares/)
 
 ```pseudocode
 procedure DFS(G, v) is
-	label v as discovered
+    label v as discovered
 	for all directed edges from v to w that are in G.adjacentEdges(v) do
-		if vertex w is not labeled as discovered then
-			recursively call DFS(G, w)
+ 	    if vertex w is not labeled as discovered then
+		recursively call DFS(G, w)
 ```
 
 ##### 2.1.2 Non-recursive implementation of DFS
@@ -92,30 +92,30 @@ A non-recursive implementation of DFS with worst-case space complexity ![O(|E|)]
 
 ```pseudocode
 Procedure DFS_iterative1(G, v) is
-	let S be a stack
-	S.push(v)
-	while S is not empty do
-		v = S.pop()
-		if v is not labeled as discovered then
-			label v as discovered
-			for all edges from v to w in G.adjacentEdges(v) do
-				S.push(w)
+    let S be a stack
+    S.push(v)
+    while S is not empty do
+	v = S.pop()
+	if v is not labeled as discovered then
+	    label v as discovered
+	    for all edges from v to w in G.adjacentEdges(v) do
+	        S.push(w)
 ```
 
 Another possible implementation of iterative depth-first search uses a stack of iterators of the list of neighbors of a node, instead of a stack of nodes. This *yields the same traversal* as recursive DFS.
 
 ```pseudocode
 procedure DFS_iterative(G, v) is
-	let S be a stack
-	S.push(iterator of G.adjacentEdges(v))
-	while S is not empty do
-		if S.peek().hasNext() then
-			w = S.peek().next()
-			if w is not labeled as discovered then
-				label w as discovered
-				S.push(iterator of G.adjacentEdges(w))
+    let S be a stack
+    S.push(iterator of G.adjacentEdges(v))
+    while S is not empty do
+	if S.peek().hasNext() then
+	    w = S.peek().next()
+	    if w is not labeled as discovered then
+	        label w as discovered
+		S.push(iterator of G.adjacentEdges(w))
         else
-        	S.pop()
+       	    S.pop()
 ```
 
 ### 3. Dijkstra's Algorithm
