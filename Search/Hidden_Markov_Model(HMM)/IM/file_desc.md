@@ -33,6 +33,3 @@
   + 数据预处理文件
 + pinyin_normal.txt, sentences_normal.txt
   + 预处理后的数据文件
-  
-#### z_others
-+ 
