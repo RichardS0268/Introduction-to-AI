@@ -28,6 +28,7 @@
     + 拼音汉字表.txt
     + 一二级汉字表.txt
 
+
     2. 语料库.zip
 
     `wget https://cloud.tsinghua.edu.cn/f/ad2a884a89204c1eaa15/?dl=1 -O ./src/语料库.zip`
