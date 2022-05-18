@@ -42,8 +42,7 @@ def forward(self, x, _): # (bs, padding, embedding)
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled.png" alt="图1：BasicMLP 网络结构" style="zoom: 67%;" />
-
-																					图1：BasicMLP 网络结构
+								图1：BasicMLP 网络结构
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" style="zoom:67%;" />
 
