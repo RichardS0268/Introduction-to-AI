@@ -54,8 +54,7 @@ def forward(self, x, _): # (bs, padding, embedding)
 采用 Yoon Kim模型。
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%202.png" alt="图3：SimpleCNN 网络结构" style="zoom: 67%;" />
-
-																					图3：SimpleCNN 网络结构
+图3：SimpleCNN 网络结构
 
 ```python
 # 前向传播过程 
@@ -75,8 +74,7 @@ def forward(self, x, _):
 与传统的CNN类似，在网络中多次堆叠卷积层、激活函数、缩小一倍的池化层。最后用一个全连接层进行分类。
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%203.png" alt="图4：DeepCNN 网络结构" style="zoom: 67%;" />
-
-																					图4：DeepCNN 网络结构
+图4：DeepCNN 网络结构
 
 ```python
 # 前向传播过程
