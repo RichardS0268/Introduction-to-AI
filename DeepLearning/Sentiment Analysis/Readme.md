@@ -150,13 +150,11 @@ pytorch 的 `dataloader` 要求数据的位数严格一致，因此需要对较�
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%205.png" alt="图6：训练集句长分布" width = "600px"  />
 图6：训练集句长分布
 
-<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%206.png" alt="图7：验证集句长分布"  />
+<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%206.png" alt="图7：验证集句长分布"  width = "600px"/>
 图7：验证集句长分布
 
-<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%207.png" alt="图8：测试集句长分布" style="zoom: 67%;" />
+<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%207.png" alt="图8：测试集句长分布" width = "600px" />
 图8：测试集句长分布
-
-https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%207.png
 
 ### 2.2 RNN
 
