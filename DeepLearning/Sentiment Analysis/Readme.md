@@ -43,11 +43,11 @@ def forward(self, x, _): # (bs, padding, embedding)
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled.png" alt="图1：BasicMLP 网络结构" style="zoom: 67%;" />
 
-																													图1：BasicMLP 网络结构
+																					图1：BasicMLP 网络结构
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" style="zoom:67%;" />
 
-																													  图2：MMPMLP网络结构
+																					图2：MMPMLP网络结构
 
 ### **1.2 CNNs**
 
@@ -57,7 +57,7 @@ def forward(self, x, _): # (bs, padding, embedding)
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%202.png" alt="图3：SimpleCNN 网络结构" style="zoom: 67%;" />
 
-​																						图3：SimpleCNN 网络结构
+																					图3：SimpleCNN 网络结构
 
 ```python
 # 前向传播过程 
@@ -78,7 +78,7 @@ def forward(self, x, _):
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%203.png" alt="图4：DeepCNN 网络结构" style="zoom: 67%;" />
 
-​																							图4：DeepCNN 网络结构
+																					图4：DeepCNN 网络结构
 
 ```python
 # 前向传播过程
@@ -142,7 +142,7 @@ def forward(self, x, x_len): # (bs, padding, embedding) (bs)
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%204.png" alt="图4：DeepCNN 网络结构" style="zoom: 67%;" />
 
-​																							图5：BasicRNN 及 MPRNN 网络结构 
+																				图5：BasicRNN 及 MPRNN 网络结构 
 
 ## 2. 实现细节
 
@@ -156,7 +156,7 @@ pytorch 的 `dataloader` 要求数据的位数严格一致，因此需要对较�
 
 图6：训练集句长分布
 
-<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%206.png" alt="图7：验证集句长分布" style="zoom: 67%;" />
+<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%206.png" alt="图7：验证集句长分布"  />
 
 图7：验证集句长分布
 
