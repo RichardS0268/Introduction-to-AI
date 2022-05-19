@@ -205,7 +205,7 @@ python inference.py --model RNN
 
 ```bash
 # MLPs
-python main1.py --model MLP --bs 256 --lr 0.0001 --dr 0.95 --early_stop 1 --max_epoch 5
+python main.py --model MLP --bs 256 --lr 0.0001 --dr 0.95 --early_stop 1 --max_epoch 5
 python main.py --model MMPMLP --bs 256 --lr 0.0001 --dr 0.95 --early_stop 1 --max_epoch 5
 # CNNs
 python main.py --model CNN --bs 256 --lr 0.001 --dr 0.95 --early_stop 1 --max_epoch 5
