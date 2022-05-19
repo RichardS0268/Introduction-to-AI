@@ -22,6 +22,8 @@ def forward(self, x, _):
     x = self.fc3(x)
     return x
 ```
+<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled.png" alt="图1：BasicMLP 网络结构" width = "600px" />
+图1：BasicMLP 网络结构
 
 **MMPMLP (min-max pooling MLP)**
 
@@ -40,9 +42,6 @@ def forward(self, x, _): # (bs, padding, embedding)
 	  x = self.fc3(x)
 	  return x
 ```
-
-<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled.png" alt="图1：BasicMLP 网络结构" width = "600px" />
-图1：BasicMLP 网络结构
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" width = "600px"  />
 图2：MMPMLP网络结构
