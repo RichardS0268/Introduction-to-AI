@@ -6,7 +6,7 @@
 
 ### 1.1 MLP
 
-**BasicMLP** 
+#### BasicMLP 
 
 将词向量拉成一维，通过隐藏层、激活函数、最后进入分类器。
 
@@ -26,7 +26,7 @@ def forward(self, x, _):
 图1：BasicMLP 网络结构
 
 
-**MMPMLP (min-max pooling MLP)**
+#### MMPMLP (min-max pooling MLP)
 
 对词向量的每一维，分别取输入词向量的最大值，最小值。将合成向量通过全连接层、激活函数、分类器。
 
@@ -47,9 +47,9 @@ def forward(self, x, _): # (bs, padding, embedding)
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" width = "600px"  />
 图2：MMPMLP网络结构
 
-### **1.2 CNNs**
+### 1.2 CNNs
 
-**SimpleCNN**
+#### SimpleCNN
 
 采用 Yoon Kim模型。
 
@@ -69,7 +69,7 @@ def forward(self, x, _):
      return x
 ```
 
-**DeepCNN**
+#### DeepCNN
 
 与传统的CNN类似，在网络中多次堆叠卷积层、激活函数、缩小一倍的池化层。最后用一个全连接层进行分类。
 
@@ -101,7 +101,7 @@ def forward(self, x, _):
 
 ### 1.3 RNNs
 
-**BasicRNN**
+#### BasicRNN
 
 将词向量一次输入循环神经网络，把循环神经网络最后一个时刻的输出输入分类器。
 
@@ -118,7 +118,7 @@ def forward(self, x, x_len): # (bs, padding, embedding) (bs)
     return output
 ```
 
-**MPRNN**
+#### MPRNN
 
 将词向量依次输入循环神经网络，取每个时刻输出的最大值进入分类器。
 
