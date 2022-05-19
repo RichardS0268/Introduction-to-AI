@@ -25,6 +25,7 @@ def forward(self, x, _):
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled.png" alt="图1：BasicMLP 网络结构" width = "600px" />
 图1：BasicMLP 网络结构
 
+
 **MMPMLP (min-max pooling MLP)**
 
 对词向量的每一维，分别取输入词向量的最大值，最小值。将合成向量通过全连接层、激活函数、分类器。
