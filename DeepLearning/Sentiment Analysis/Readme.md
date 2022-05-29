@@ -40,7 +40,7 @@ def forward(self, x, _):
     x = self.fc2(x) # 256 * 256
     x = self.sigmoid(x)
     x = self.fc3(x)
-return x
+    return x
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" width = "600px"  />
