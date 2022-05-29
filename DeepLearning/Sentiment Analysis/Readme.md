@@ -13,11 +13,11 @@
 ```python
 # 前向传播过程
 def forward(self, x, _):
-    x = x.view(x.shape[0], -1) # 256 * 3200
-    x = self.fc1(x) # 256 * 1024
+    x = x.view(x.shape[0], -1)
+    x = self.fc1(x) 
     x = self.dropout(x) 
     x = self.sigmoid(x) 
-    x = self.fc2(x) # 256 * 256
+    x = self.fc2(x) 
     x = self.sigmoid(x) 
     x = self.fc3(x)
     return x
@@ -33,15 +33,14 @@ def forward(self, x, _):
 ```python
 # 前向传播过程
 def forward(self, x, _): 
-		# 256 * 100
-	  x = torch.cat([torch.max(x, dim=1)[0], torch.min(x, dim=1)[0]], dim=1) 
-	  x = self.fc1(x) # 256 * 1024
-	  x = self.dropout(x) 
-	  x = self.sigmoid(x)
-	  x = self.fc2(x) # 256 * 256
-	  x = self.sigmoid(x)
-	  x = self.fc3(x)
-	  return x
+    x = torch.cat([torch.max(x, dim=1)[0], torch.min(x, dim=1)[0]], dim=1) 
+    x = self.fc1(x) # 256 * 1024
+    x = self.dropout(x) 
+    x = self.sigmoid(x)
+    x = self.fc2(x) # 256 * 256
+    x = self.sigmoid(x)
+    x = self.fc3(x)
+return x
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%201.png" alt="图2：MMPMLP网络结构" width = "600px"  />
@@ -59,14 +58,14 @@ def forward(self, x, _):
 ```python
 # 前向传播过程 
 def forward(self, x, _):
-     x = x.unsqueeze(1)
-     x = [conv(x) for conv in self.conv]
-     x = [self.activate(i.squeeze(3)) for i in x]
-     x = [F.max_pool1d(i, i.size(2)).squeeze(2) for i in x]
-     x = [self.dropout(y) for y in x]
-     x = torch.cat(x, 1)
-     x = self.fc(x)
-     return x
+    x = x.unsqueeze(1)
+    x = [conv(x) for conv in self.conv]
+    x = [self.activate(i.squeeze(3)) for i in x]
+    x = [F.max_pool1d(i, i.size(2)).squeeze(2) for i in x]
+    x = [self.dropout(y) for y in x]
+    x = torch.cat(x, 1)
+    x = self.fc(x)
+    return x
 ```
 
 #### DeepCNN
@@ -82,7 +81,7 @@ def forward(self, x, _):
     x = self.dropout(x)
     x = x.unsqueeze(1)
     x = self.conv0(x)
-	  x = x.squeeze(3)
+    x = x.squeeze(3)
     x = self.pool0(x)
     x = self.relu0(x)
     x = self.conv1(x)
@@ -108,7 +107,7 @@ def forward(self, x, _):
 ```python
 # 前向传播过程
 def forward(self, x, x_len): 
-		...
+	...
     x_padded = nn.utils.rnn.pack_padded_sequence(x, lengths=list(x_len[idx_sort]), batch_first=True)
     _, (ht, _) = self.lstm(x_padded)
     ht = ht.permute([1, 0, 2])
@@ -125,15 +124,14 @@ def forward(self, x, x_len):
 ```python
 # 前向传播过程
 def forward(self, x, x_len): 
-	  ...
-		x_padded = nn.utils.rnn.pack_padded_sequence(x, lengths=list(x_len[idx_sort]), batch_first=True)
-		states, (ht, _) = self.lstm(x_padded)
-		states = nn.utils.rnn.pad_packed_sequence(states, batch_first=True)[0]
-		states = states.index_select(0, Variable(idx_unsort))
-		states = torch.max(states, dim = 1)[0]
-		
-		output = self.fc(states)
-		return output
+        ...
+    x_padded = nn.utils.rnn.pack_padded_sequence(x, lengths=list(x_len[idx_sort]), batch_first=True)
+    states, (ht, _) = self.lstm(x_padded)
+    states = nn.utils.rnn.pad_packed_sequence(states, batch_first=True)[0]
+    states = states.index_select(0, Variable(idx_unsort))
+    states = torch.max(states, dim = 1)[0]
+    output = self.fc(states)
+    return output
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%204.png" alt="图4：DeepCNN 网络结构" style="zoom: 67%;" />
