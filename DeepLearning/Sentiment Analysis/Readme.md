@@ -196,8 +196,10 @@ python inference.py --model MMPMLP
 python inference.py --model CNN
 python inference.py --model DeepCNN
 #RNNs
-python inference.py --model RNN 
+python inference.py --model RNN
 python inference.py --model MPRNN
+# all models
+python inference.py --model all
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%208.png" alt="图6：训练集句长分布" style="zoom: 67%;" />
