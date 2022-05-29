@@ -32,7 +32,7 @@ def forward(self, x, _):
 
 ```python
 # 前向传播过程
-def forward(self, x, _): # (bs, padding, embedding)
+def forward(self, x, _): 
 		# 256 * 100
 	  x = torch.cat([torch.max(x, dim=1)[0], torch.min(x, dim=1)[0]], dim=1) 
 	  x = self.fc1(x) # 256 * 1024
@@ -107,7 +107,7 @@ def forward(self, x, _):
 
 ```python
 # 前向传播过程
-def forward(self, x, x_len): # (bs, padding, embedding) (bs)
+def forward(self, x, x_len): 
 		...
     x_padded = nn.utils.rnn.pack_padded_sequence(x, lengths=list(x_len[idx_sort]), batch_first=True)
     _, (ht, _) = self.lstm(x_padded)
@@ -124,7 +124,7 @@ def forward(self, x, x_len): # (bs, padding, embedding) (bs)
 
 ```python
 # 前向传播过程
-def forward(self, x, x_len): # (bs, padding, embedding) (bs)
+def forward(self, x, x_len): 
 	  ...
 		x_padded = nn.utils.rnn.pack_padded_sequence(x, lengths=list(x_len[idx_sort]), batch_first=True)
 		states, (ht, _) = self.lstm(x_padded)
@@ -196,7 +196,8 @@ python inference.py --model MMPMLP
 python inference.py --model CNN
 python inference.py --model DeepCNN
 #RNNs
-python inference.py --model RNN
+python inference.py --model RNN 
+python inference.py --model MPRNN
 ```
 
 <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/DeepLearning/Sentiment%20Analysis/docs/Untitled%208.png" alt="图6：训练集句长分布" style="zoom: 67%;" />
