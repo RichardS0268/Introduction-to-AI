@@ -34,10 +34,10 @@ def forward(self, x, _):
 # 前向传播过程
 def forward(self, x, _): 
     x = torch.cat([torch.max(x, dim=1)[0], torch.min(x, dim=1)[0]], dim=1) 
-    x = self.fc1(x) # 256 * 1024
+    x = self.fc1(x)
     x = self.dropout(x) 
     x = self.sigmoid(x)
-    x = self.fc2(x) # 256 * 256
+    x = self.fc2(x) 
     x = self.sigmoid(x)
     x = self.fc3(x)
     return x
