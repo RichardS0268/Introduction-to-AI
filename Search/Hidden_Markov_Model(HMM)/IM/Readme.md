@@ -71,7 +71,11 @@ unzip 语料库.zip
 you can get 
 
 ```
--- 语料库.zip
+-- 语料库
+---- sina_news_gbk
+-------- 2016-02.txt
+-------- ...
+-------- 2016-11.txt
 ```
 
 You can use the ♦ files directly and run `IM_shell.py` and `IM.ipynb`. Or you can run `data_handler.ipynb` to generate these files manually.
