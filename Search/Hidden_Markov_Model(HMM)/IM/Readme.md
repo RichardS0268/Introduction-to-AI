@@ -84,10 +84,10 @@ run `IM_shell.py` or `IM.ipynb` when necessary files are ready.
 python IM_shell.py
 ```
 
-<img src="C:\Users\Richard.S\AppData\Roaming\Typora\typora-user-images\image-20220601185648922.png" alt="image-20220601185648922" style="zoom:60%;" />
+<img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/Search/Hidden_Markov_Model(HMM)/IM/docx/Inference1.png" style="zoom:60%;" />
 
 
 
 run  `IM.ipynb`
 
- <img src="C:\Users\Richard.S\AppData\Roaming\Typora\typora-user-images\image-20220601185804945.png" alt="image-20220601185804945" style="zoom:60%;" />
+ <img src="https://github.com/RichardS0268/Introduction-to-AI/blob/main/Search/Hidden_Markov_Model(HMM)/IM/docx/Inference2.png" style="zoom:60%;" />
