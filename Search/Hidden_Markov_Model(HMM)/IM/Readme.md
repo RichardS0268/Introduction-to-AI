@@ -1,6 +1,6 @@
 # ⌨Input Method -- PinYin
 
-### Files Structure
+## Files Structure
 
 + To run `IM_shell.py` and `IM.ipynb`, make sure the files ended with ♦ exist.
 + To run `IM_test.py`, make sure the files ended with ♠ exist.
@@ -41,7 +41,7 @@
 ---- sentences.txt
 ```
 
-### Pre-processed Data
+## Pre-processed Data
 
 Located in folder `./src`, you can download the pre-processed data together with raw data with
 
@@ -76,7 +76,7 @@ you can get
 
 You can use the ♦ files directly and run `IM_shell.py` and `IM.ipynb`. Or you can run `data_handler.ipynb` to generate these files manually.
 
-### Inference
+## Inference
 
 run `IM_shell.py` or `IM.ipynb` when necessary files are ready.
 
